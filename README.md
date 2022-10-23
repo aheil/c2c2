@@ -10,12 +10,12 @@ comment:
 
 -->
 
-[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://LiaScript.github.io/course/?https://github.com/aheil/os) 
+[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://LiaScript.github.io/course/?https://github.com/aheil/c2c2) 
 
 
 # Cloud Computing - COIL
 
-These pages are also available as als [interaktive course](https://liascript.github.io/course/?https://github.com/aheil/coil2022) .
+These pages are also available as als [interaktive course](https://liascript.github.io/course/?https://github.com/aheil/c2c2) .
 
 **About the course**
 
