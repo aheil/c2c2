@@ -133,7 +133,100 @@ If not stated otherwise, all material on this course page is  [Creative Commons 
 
 ### Day 1 
 
+During the first day a intercultural workshop took place, where the members of the team had plenty of time to get to know each other.
+
+Further information on this will follow soon...
 ### Day 2 
+
+Day two is fully packed with technical challenges, where the teams are going to finish various tasks.
+
+The tasks will be done by 
+
+- a **hardware team** where we build our own cloud based on a RaspberryPi cluster
+- a **Linux team** responsible for the base system, hardening the base system and including everything in the Ansible scrips
+- a **Kubernetes team**, responsible to install a Kubernetes base installation
+- an **Ansible team**, responsible for creating automated tasks to set up the cluster (operating system, security, installing the Kubernetes on the cluster) and 
+- setting up a CI/CD pipeline by a *automation team* so everything the team creates is deployed automatically once checked in in Git.
+
+For all teams, the three part guide [Kubernetes Cluster on Raspberry Pi 4B](https://www.reddit.com/r/kubernetes/comments/enojpn/step_by_stepguide_kubernetes_cluster_on_raspberry/)  might be a good starting point: 
+
+- https://www.reddit.com/r/kubernetes/comments/enojpn/step_by_stepguide_kubernetes_cluster_on_raspberry/
+
+Part 1:
+
+- https://medium.com/@astrujic/step-by-step-slow-guide-kubernetes-cluster-on-raspberry-pi-4b-part-1-6e4179c89cbc
+
+Part 2:
+
+- https://medium.com/@astrujic/step-by-step-slow-guide-kubernetes-cluster-on-raspberry-pi-4b-part-2-e1f2ee8f3011
+
+Part 3:
+
+- https://medium.com/@astrujic/step-by-step-slow-guide-kubernetes-cluster-on-raspberry-pi-4b-part-3-899fc270600e
+
+To get an idea of Kubernetes, check out the [Kubernetes Overview](https://kubernetes.io/docs/concepts/overview/).
+
+- https://kubernetes.io/docs/concepts/overview/ 
+
+Additional information about how to build a Kubernetes cluster on Ubuntu, you find at the Ubuntu tutorials [How to build a Raspberry Pi Kubernetes cluster using MicroK8s
+](https://ubuntu.com/tutorials/how-to-kubernetes-cluster-on-raspberry-pi#1-overview).
+
+- https://ubuntu.com/tutorials/how-to-kubernetes-cluster-on-raspberry-pi#1-overview 
+
+The best way to get startet with Ansible is by doing it using the [Ansible Community Documentation](https://docs.ansible.com/ansible_community.html).
+
+- https://docs.ansible.com/ansible_community.html
+
+We do expect at least on Ansible playbook for installing the cluster. Why? As soon as you have finished the playbook, you will be able to install the cluster again, and again, and again within no time. Therefore changing (and messing around) with the cluster won`t hurt. 
+
+Finally, the cluster has to be installed by a [GitLAb CI/CD pipeline](https://docs.gitlab.com/ee/ci/pipelines/).
+
+Setting up the RaspberryPi Case is documented as at the [Cluster Case Assembly Instructions](https://thepihut.com/blogs/raspberry-pi-tutorials/cluster-case-assembly-instructions).
+
+- https://thepihut.com/blogs/raspberry-pi-tutorials/cluster-case-assembly-instructions
+
+
+Finally, the hardware available for the project is based on the blog of [Rockford Lhotka blog](https://blog.lhotka.net/2020/09/10/Raspberry-Pi-and-microk8s).
+
+- https://blog.lhotka.net/2020/09/10/Raspberry-Pi-and-microk8s
+
+![](img/cluster.jpg)
+
+#### Hardware Task 
+
+Tasks:
+
+- Create a Raspberry Cluster based on the hardware provided. The has tobe accessible via the very own wireless adaptor provided.
+- Document the setup as well as important decisions so every team member could rebuild the setup
+
+![](img/hardware.jpg)
+
+Bonus: The hardware team will join our hardware lab to add some LEDs and flashy lights to our cluster hardware in the afternoon! 
+
+#### Linux Task 
+
+- Set up the base installation for the cluster based on Ubuntu for ARM architecture 
+- Take care of hardening the system (no passwords, access via SSH keys only, make sure every team member get s access to the system, firewall. Fail2Ban etc.)
+- Prepare every installation step so it can be put into Ansible task for automation 
+- Document the setup as well as important decisions so every team member could rebuild the setup
+
+#### Kubernetes Task 
+
+- Set up the basic Kubernetes installation for the cluster. 
+- At a minimum one administrator account has to be provided for the following workshop on day 3
+- Document the setup as well as important decisions so every team member could rebuild the setup
+
+#### CI/CD Task 
+
+- Set up a CI/CD pipeline in Git.
+- After every check-in in git (probably on a very specific branch, e.g. release), the pipeline should be triggered and cause the cluster to be fully installed 
+- Document the setup as well as important decisions so every team member could rebuild the setup
+
+### Course Resources
+
+- Confluence for documenting: https://confluence-student.it.hs-heilbronn.de/display/C2C2/c2c2
+- HHN GitLab: https://git.it.hs-heilbronn.de (projects will be created as required)
+- If not familiar with Git: https://www.udacity.com/course/version-control-with-git--ud123 
 
 ### Day 3 
 
