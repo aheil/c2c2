@@ -230,8 +230,39 @@ Bonus: The hardware team will join our hardware lab to add some LEDs and flashy 
 
 ### Day 3 
 
+Day three will be covered by a full day workshop about DevOps and Kubernetes held by Exxeta AG from Stuttgart. 
+
 ### Day 4
+
+Day 4 is split into 3 parts: 
+
+- Introduction to the follow up virtual COIL group work 
+- Guided tour of the VR Labs at our UniTyLab.
+- Group Work and preparing your presentations
+
+#### Virtual COIL Group Work 
+
+The task of the virtual group work will be to continue the work done so far by extending it with a small application hosted by your Kubernetes cluster. 
+
+- You will develop a small web application in form of a guide tour for Ho Chi Minh City.
+- The application should consist of three part: database + backend + frontend.
+- Each team shall provide a different aspect of the application (frontend + backend).
+- Each part shall run in its own container.
+- All three containers shall be hosted in one Kubernetes pod.
+- You provide one service to connect to the pod.
+- The service shall expose port 80 to be reached.
+
+- The container images can be hosted in any repository you choose. 
+- It is acceptable, that the images are build by hand and pushed to the repository manually.
+- Bonus: You implement another Pipeline that pushes the images automatically to the repository.
 
 ### Day 5
 
+- Final presentation (15 Minutes each group)
+- Retrospective of the week 
+- Excursion to Heilbronn Experimenta
+
 ## Project Work 
+
+- You will be able to ask any question during the project work via the forum in ILIAS 
+- There will be a set of syn meetings be offered online. 
